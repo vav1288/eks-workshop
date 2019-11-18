@@ -19,7 +19,7 @@ jazz-v1-644856f4b4-mshnr    1/1     Running   0          3h
 metal-v1-84bffcc887-97qzw   1/1     Running   0          3h
 ```
 
-and to take a closer look:
+and to take a closer look (you would need to change pod name):
 
 ```
 kubectl describe pods/dj-5b445fbdf4-qf8sv -nprod
