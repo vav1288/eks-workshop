@@ -22,7 +22,7 @@ metal-v1-84bffcc887-97qzw   1/1     Running   0          3h
 and to take a closer look:
 
 ```
-kubectl describe pods/dj-5b445fbdf4-qf8sv -nprod
+kubectl describe pods/$(kubectl get pods -nprod | grep 'dj-' | awk '{print $1}') -nprod
 ```
 
 yields:
